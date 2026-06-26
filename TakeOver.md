@@ -3,7 +3,7 @@
 **Target:** `futurevera.thm` / `10.66.161.252`  
 **Category:** Reconnaissance / Web  
 **Difficulty:** Easy  
-**Flag:** `flag{beea0d6edfcee06a59b83fb50ae81b2f}`
+
 
 ---
 
@@ -57,7 +57,6 @@ Added the discovered subdomain to `/etc/hosts` and accessed it. HTTPS failed, bu
 <img width="1191" height="840" alt="image" src="https://github.com/user-attachments/assets/157340ff-2f44-43f4-871e-bd942f4b0652" />
 
 ```
-flag{beea0d6edfcee06a59b83fb50ae81b2f}
 ```
 
 ---
