@@ -43,7 +43,8 @@ openssl s_client -connect 10.66.161.252:443 </dev/null 2>/dev/null \
 
 The SAN field disclosed a hidden subdomain: `secrethelpdesk934752.support.futurevera.thm`
 
-<img width="1191" height="859" alt="image" src="https://github.com/user-attachments/assets/c450514d-49f2-4018-b4ce-16769836cfd6" />
+<img width="1191" height="859" alt="image" src="https://github.com/user-attachments/assets/2ea02b27-a38d-42ef-afd3-733daba66093" />
+
 
 
 The numeric prefix is meant to obscure the subdomain — but embedding it in a publicly readable certificate completely defeats that purpose.
@@ -53,8 +54,9 @@ The numeric prefix is meant to obscure the subdomain — but embedding it in a p
 ## Step 4: Accessing the Hidden Subdomain over HTTP
 
 Added the discovered subdomain to `/etc/hosts` and accessed it. HTTPS failed, but switching to **HTTP** triggered a redirect to an AWS S3 URL with the flag in the hostname.
+<img width="1191" height="840" alt="image" src="https://github.com/user-attachments/assets/fbe75785-ce66-4684-a2dc-72574237e635" />
 
-<img width="1191" height="840" alt="image" src="https://github.com/user-attachments/assets/157340ff-2f44-43f4-871e-bd942f4b0652" />
+
 
 ```
 ```
